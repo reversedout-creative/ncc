@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 /* font-family: 'Montserrat', sans-serif; */
 
-
 /* Import CSS */
 @import 'bootstrap.min.css';  /* Bootstrap CSS  */
 @import 'slimmenu.min.css';   /* slimmenu.min */
@@ -296,7 +295,11 @@ strong {
 }
 
 @media(max-width:767px){ .hidden-xs { display: none; } }
-
+.wrapper {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
 /*==========================================================================================*/
 /*================================  END_RESET_CSS   ========================================*/
 /*==========================================================================================*/
