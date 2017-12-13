@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Basic Page Needs -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Mobile Specific Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>Nebraska Christian College</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- Favicons -->
+	  <link rel="icon" href="images/favicon.ico">
+      <!--Style CSS--> 
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->  
+</head>
+<body id="Top">
+
+<!-- Header -->
+<header class="main-header">
+ 	<div class="container">
+    	<div class="row">
+             <div class="logo pull-left">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+             </div>
+	         
+             <!-- Slim Menu -->
+			 <div class="header-contact">
+                <a href="tel:8882784662"> (888) 278-4662</a>
+            </div>
+        </div>
+     </div>
+</header>
+<!-- End Header -->
+
+<!-- Banner -->
+<section class="thankyou-page" data-parallax="scroll" data-image-src="images/thankyoy-banner.jpg">
+<div class="container text-center">
+	<div class="">
+                	<h1 class="wow fadeInUp">Thank You</h1>
+                    <h2 class="wow fadeInUp">for your interest in Nebraska Chris:an College.</h2>
+                    <h5 class="wow fadeInUp">An Academic Coach will be in touch soon to help you take the next step in taking charge of your educa:onal future.</h5>
+                </div>
+</div>    
+</section>
+<!-- End Banner -->
+
+
+
+
+
+<!-- Footer -->
+<footer class="sections footer">
+<div class="container">
+<div class="row">
+	<div class="col-md-12 text-center">
+    	<img src="images/logo.png" alt="Logo">
+        
+        <ul class="quick-link">
+        	<li class="hope-website">Nebraska Christian College</li>
+            <li><a href="https://www.google.com/maps/place/12550+S+114th+St,+Papillion,+NE+68046,+USA/@41.121667,-96.0953977,17z/data=!3m1!4b1!4m5!3m4!1s0x8793f5619650648f:0xfc1d2ae653d6b18b!8m2!3d41.121667!4d-96.093209?dcr=0&q=12550+South+114th+Street+Papillion,+NE+68046&um=1&ie=UTF-8&sa=X&ved=0ahUKEwjWgY7A64PYAhUEp48KHfTLCvwQ_AUICigB" target="_blank">12550 South 114th Street Papillion, NE 68046</a></li>
+            <li><a href="tel:4029359400"> (402) 935-9400</a></li>
+        </ul>
+        
+		<p>&copy; 2017 Nebraska Christian College of Hope International University, All Rights Reserved</p>
+        
+    </div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+    
+<!--Go Top-->
+<div class="go-up"><span class="glyphicon glyphicon-menu-up"></span></div>
+<!--End Go Top-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>			<!-- Bootstrap JS  --> 
+<script src="js/jquery.slimmenu.js"></script>		<!-- Slim Menu  --> 
+<script type="text/javascript">
+	$('.slimmenu').slimmenu({
+		resizeWidth: '991',
+		collapserTitle: '',
+		animSpeed:'medium',
+		indentChildren: true,
+		childrenIndenter: '<i class="fa fa-chevron-right"></i>'
+	});
+	// Close Effect Menu
+	$(function() {
+		$('.collapse-button').click(function() {
+			$('.collapse-button').toggleClass('close-menu');
+		});
+	});
+</script>   
+
+<script src="js/owl.carousel.js"></script>         <!-- Owl Slider -->
+<script src="js/simpleparallax.js"></script>       <!-- Parallax -->
+<script src="js/wow.min.js"></script>              <!-- WOW Animate -->
+<script src="js/custom.js"></script>		       <!--Custom JS -->
+
+<script>
+// Slider Script 
+$('#psychology,#slider_studies,#slider_education,#slider_business').carousel({ interval: false });
+</script>
+
+<!-- Top Scrolling -->
+<script type="text/javascript">
+if($(window).width() > 991) {
+	$(document).ready(function() {
+        // navigation click actions	
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 104;
+        var targetOffset = $(id).offset().top - offSet;
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+    }
+	
+	}
+else {
+	$(document).ready(function() {
+        // navigation click actions	
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+    }
+	
+}
+</script>
+
+<script>
+$(document).ready(function() {
+$('.slimmenu li a').on('click', function(){
+		var sectionID1 = $(this).attr("id");
+		$("#myTab li").not("#" + sectionID1).removeClass( "active" );
+		$("#myTab").find('li[id="'+sectionID1+'"]').addClass( "active" );
+		$(".tab-content div.tab-pane").not("#" + sectionID1).removeClass( "active" );
+		$(".tab-content").find('div[id="'+sectionID1+'"]').addClass( "active" );
+		
+	});
+});
+// Select Box Options Script
+$(document).ready(function () {
+    $("#type").change(function () {
+        var val = $(this).val();
+        if (val == "item1") {
+            $("#size").html("<option value='Human Development'>Human Development</option><option value='Liberal Studies'>Liberal Studies</option><option value='Teacher Preparation'>Teacher Preparation</option><option value='Christian Ministry'>Christian Ministry</option><option value='Business Administration'>Business Administration</option>");
+        } else if (val == "item2") {
+            $("#size").html("<option value='Master of Science in Counseling Psychology'>Master of Science in Counseling Psychology</option><option value='Master of Education'>Master of Education</option><option value='Master of Arts in Education Administration'>Master of Arts in Education Administration</option><option value='Master of Divinity'>Master of Divinity</option><option value='Master of Arts in Ministry'>Master of Arts in Ministry</option><option value='Master of Business Administration (MBA)'>Master of Business Administration (MBA)</option><option value='Master of Science in Management'>Master of Science in Management</option>");
+        } else if (val == "item0") {
+            $("#size").html("<option value=''> select one</option>");
+        }
+    });
+});
+</script>
+   </body>
+</html>
+
