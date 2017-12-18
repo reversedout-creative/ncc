@@ -79,7 +79,7 @@
                         <input type="email" placeholder="E-mail Address*" required>
                         <input type="tel" placeholder="Phone Number*" required>
                         <select id="type">
-                        	<option disabled selected value="item0">Undergraduate / Graduate</option>
+                        	<option disabled selected value="item0">Degree Type</option>
                             <option value="item1">Undergraduate</option>
                             <option value="item2">Graduate</option>
                         </select>
@@ -652,7 +652,7 @@ $(document).ready(function () {
     $("#type").change(function () {
         var val = $(this).val();
         if (val == "item1") {
-            $("#size").html("<option value='Human Development'>Human Development</option><option value='Liberal Studies'>Liberal Studies</option><option value='Teacher Preparation'>Teacher Preparation</option><option value='Christian Ministry'>Christian Ministry</option><option value='Business Administration'>Business Administration</option>");
+            $("#size").html("<option value='Human Development'>Human Development</option><option value='Bachelor of Arts: Liberal Studies'>Bachelor of Arts: Liberal Studies</option><option value='Christian Ministry'>Christian Ministry</option><option value='Business Administration'>Business Administration</option>");
         } else if (val == "item2") {
             $("#size").html("<option value='Master of Science in Counseling Psychology'>Master of Science in Counseling Psychology</option><option value='Master of Education'>Master of Education</option><option value='Master of Arts in Education Administration'>Master of Arts in Education Administration</option><option value='Master of Divinity'>Master of Divinity</option><option value='Master of Arts in Ministry'>Master of Arts in Ministry</option><option value='Master of Business Administration (MBA)'>Master of Business Administration (MBA)</option><option value='Master of Science in Management'>Master of Science in Management</option>");
         } else if (val == "item0") {
